@@ -1,0 +1,12 @@
+#fix {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    height: 55px;
+}
+#below {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}

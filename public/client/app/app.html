@@ -1,0 +1,27 @@
+<div id="fix">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menu-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{ title }}</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-menu-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a routerLink="/" routerLinkActive="active">Home</a></li>
+                <li class="active"><a routerLink="/picture1" routerLinkActive="active">Picture 1</a></li>
+                <li class="active"><a routerLink="/picture2" routerLinkActive="active">Picture 2</a></li>
+                <li class="active"><a routerLink="/picture3" routerLinkActive="active">Picture 3</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<br>
+<div id="below">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

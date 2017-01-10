@@ -1,0 +1,26 @@
+block var
+doctype html
+html(data-ng-app = "encounter")
+    head
+        script document.write('<base href="' + document.location + '" />')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title #{title}
+        link(rel='stylesheet', href='/CSS/style.css')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+        // 1. Load libraries
+        // Polyfill(s) for older browsers
+        script(src="/libs/core-js/client/shim.min.js")
+        script(src="/libs/zone.js/dist/zone.js")
+        script(src="/libs/reflect-metadata/Reflect.js")
+        script(src="/libs/systemjs/dist/system.src.js")
+
+        // 2. Configure SystemJS
+        script(src="/client/systemjs.config.js")
+        script System.import('app').catch(function (err) {console.error(err);});
+        block head
+
+    body.noSelect
+        block content
